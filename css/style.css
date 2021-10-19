@@ -42,6 +42,9 @@ body {
   text-align: right;
   background-color: rgb(235, 235, 235);
 }
+#number-input:focus {
+  outline: none;
+}
 #row {
   display: flex;
 }
