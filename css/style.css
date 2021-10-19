@@ -59,6 +59,10 @@ p {
 p:hover {
   color: white;
 }
+.shadow {
+  color: rgb(0, 204, 255);
+  text-shadow: 2px 2px 2px rgb(207, 207, 207);
+}
 
 @media only screen and (min-width: 375px) {
   #calc-body {
