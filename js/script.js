@@ -50,6 +50,21 @@ num8.onclick = function(input){
 num9.onclick = function(input){
     display.value +='9';
 }
+minus.onclick = function(input){
+    display.value +='-';
+}
+add.onclick = function(input){
+    display.value +='+';
+}
+devide.onclick = function(input){
+    display.value +='/';
+}
+multi.onclick = function(input){
+    display.value +='*';
+}
+equal.onclick = function(input){
+    display.value = eval(display.value);
+}
 clear.onclick = function(input){
     display.value='';
 }
