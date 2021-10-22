@@ -1,5 +1,10 @@
 console.log("Script loaded");
 
+var num0 = document.getElementById("0");
+var equal = document.getElementById("=");
+var devide = document.getElementById("/");
+var clear = document.getElementById("c");
+
 var display = document.getElementById("number-input");
 const cols = document.querySelectorAll('.col');
 
@@ -9,6 +14,27 @@ cols.forEach((c) => {
         display.value += c.innerHTML;
     })
 })
+
+num0.onclick = function(input){
+    display.value +='0';
+}
+
+clear.onclick = function(input){
+    display.value='';
+}
+
+devide.onclick = function(input){
+    display.value +='/';
+}
+
+equal.onclick = function(input){
+    if(display.value == ""){
+        alert("Please enter value!!");
+    }
+    else{
+        display.value = eval(display.value);
+    }
+}
 
 console.log(cols);
 console.log("GG");
