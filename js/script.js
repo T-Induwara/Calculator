@@ -1,7 +1,19 @@
 console.log("Script loaded");
 
 var display = document.getElementById("number-input");
+const cols = document.querySelectorAll('.col');
 
+cols.forEach((c) => {
+    c.addEventListener('click',function(){
+        console.log(c.innerHTML);
+        display.value += c.innerHTML;
+    })
+})
+
+console.log(cols);
+console.log("GG");
+
+/* These are the old codes for this calculator
 var num0 = document.getElementById("0");
 var num1 = document.getElementById("1");
 var num2 = document.getElementById("2");
@@ -68,4 +80,6 @@ equal.onclick = function(input){
 clear.onclick = function(input){
     display.value='';
 }
+*/
+
 
