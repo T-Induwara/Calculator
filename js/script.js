@@ -1,14 +1,14 @@
 console.log("Script loaded");
 
-var num0 = document.getElementById("0");
+var num0 = document.getElementById("0");//Declaring varialbes for 0,=,/ and c
 var equal = document.getElementById("=");
 var devide = document.getElementById("/");
 var clear = document.getElementById("c");
 
-var display = document.getElementById("number-input");
-const cols = document.querySelectorAll('.col');
+var display = document.getElementById("number-input");//Declaring input area
+const cols = document.querySelectorAll('.col');//Declaring all the columns into single constant
 
-cols.forEach((c) => {
+cols.forEach((c) => {//In here I added click event listner for all the col s and then print the innerHTML value into input area
     c.addEventListener('click',function(){
         console.log(c.innerHTML);
         display.value += c.innerHTML;
@@ -35,9 +35,6 @@ equal.onclick = function(input){
         display.value = eval(display.value);
     }
 }
-
-console.log(cols);
-console.log("GG");
 
 /* These are the old codes for this calculator
 var num0 = document.getElementById("0");
